@@ -8,7 +8,7 @@ class Tv2 {
     void channelDown() {--channel;}
 }
 
-class TvEx {
+class TvEx2 {
     public static void main(String[] args) {
         Tv2 t1 = new Tv2();
         Tv2 t2 = new Tv2();
