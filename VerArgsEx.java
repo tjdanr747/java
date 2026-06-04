@@ -1,4 +1,4 @@
-public class VerArgsEx {
+class VerArgsEx {
     public static void main(String args[]) {
         String[] strArr = {"100", "200", "300"};
 
