@@ -1,0 +1,26 @@
+class Tv3 {
+    String color;
+    boolean power;
+    int channel;
+
+    void power() {power = !power;}
+    void channelUp() {++channel;}
+    void channelDown() {--channel;}
+}
+
+class TvEx3 {
+    public static void main(String[] args) {
+        Tv3 t1 = new Tv3();
+        Tv3 t2 = new Tv3();
+
+        System.out.println("t1의 채널값은 " + t1.channel + "입니다.");
+        System.out.println("t2의 채널값은 " + t2.channel + "입니다.");
+
+        t1 = t2; // t1과 t2는 같은 Tv 객체를 참조하게 된다.
+        t1.channel = 7;
+        System.out.println("t1의 채널값을 7로 변경하였습니다.");
+
+        System.out.println("t1의 채널값은 " + t1.channel + "입니다.");
+        System.out.println("t2의 채널값은 " + t2.channel + "입니다.");
+    }
+}
